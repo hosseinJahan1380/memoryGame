@@ -78,10 +78,13 @@ body{
 }
 
 h2{
-    font-size: 2em;
-    color: #352c0a;
+    font-size: 2rem;
+    color: #555;
     letter-spacing: 2px;
     font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .reset{
     padding: 15px 25px;
@@ -99,6 +102,8 @@ h2{
     grid-template-columns: repeat(4 , 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: #f4f1de;
+    border: 10px solid #7D3C98;
+    border-radius: 12px;
     padding: 25px;
     margin: 35px ;
     gap: 20px;
@@ -113,6 +118,7 @@ h2{
     display : flex;
     justify-Content : center;
     align-items :center;
+    border-radius: 5px;
     transition: opacity 0.7s ease ,  color 0.7s  ease;
     color: transparent;
     cursor: pointer;
