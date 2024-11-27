@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d3557;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8dadc;
+    padding: 35px 25px;
+    margin: 20px 0;
+}
+.win_background{
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+.start_again{
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.start_again:hover{
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.win_condition_game{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 50, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    gap:20px;
+    border-radius: 10px ;
+}
+.win_message{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.win_message h2{
+    font-size: 3em;
+    color: gold;
+    font-weight: bold;
+}
+
+.win_message p {
+    font-size: 1.5em;
+    margin: 10px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2em;
+    color: #352c0a;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.reset{
+    padding: 15px 25px;
+    color: rgba(81, 204, 28, 0.7);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 25px;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #f4f1de;
+    padding: 25px;
+    margin: 35px ;
+    gap: 20px;
+}
+.emojiBox{
+    width: 100px;
+    height: 100px;
+    background-color: #f28482; 
+    opacity: 0.5;
+    border: 3px solid #3d405b;
+    font-size : 40px;
+    display : flex;
+    justify-Content : center;
+    align-items :center;
+    transition: opacity 0.7s ease ,  color 0.7s  ease;
+    color: transparent;
+    cursor: pointer;
+}
+
+.show{
+   color: black;
+   opacity: 1;
+}
+
+.brightEmoji{
+    background-color: #ffecb3;
+    border: 3px solid gold;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.disabled{
+    pointer-events: none; 
+}

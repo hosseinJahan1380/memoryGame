@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memoryGame.css">
+</head>
+<body>
+
+    <div class="win_condition_game">
+        <div class="win_message">
+            <h2>congradulations!</h2>
+            <p>You Win✨🎈</p>
+        </div>
+        <button  class= "start_again">Play Again</button>
+    </div>
+
+    <div class="container">
+        <h2>memory Game</h2>
+        <div class="game">
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+            <div class="emojiBox"></div>
+        </div>
+        <button  class="reset" id="result">Start Game</button>
+        <!-- card sounds effects -->
+        <audio  id="match_card_sound" src="ding-36029.mp3"></audio>
+        <audio  id="tap_card_sound" src="mixkit-game-click-1114.mp3"> </audio>
+        <audio  id="unMatch_card_sound"  src="error-9-206494.mp3"> </audio>
+        <audio  id="win_game" src="068232_successwav-82815.mp3"></audio>
+    </div>
+    <script src="memoryGame.js"></script>
+</body>
+</html>
