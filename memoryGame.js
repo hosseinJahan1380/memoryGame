@@ -42,7 +42,7 @@ startGame = (btn) => {
     // After we start the game , emojies sets in random blocks
     setEmoji()
     isGameStarted = true;
-    btn.textContent = "Reset game"
+    btn.textContent = "Restart game"
     btn.style.color = "red"
 
     // enable click all cards after we start the game
